@@ -57,15 +57,43 @@
 """ Given a string, count the frequency of each character 
     ex: "aaabbbccdddaa"
     output as: a5b3c3d4(as string)
+    and extra: find the most frequent character
 """
 
-s='aaabbbccdddaa'
-d={}
-for char in s:
-    if char in d:
-        d[char]+=1
-    else:
-        d[char]=1
+# s='aaabbbbccdddaabbb'
+# d={}
+# for char in s:
+#     if char in d:
+#         d[char]+=1
+#     else:
+#         d[char]=1
+# max_char=''
+# max_count=0
+# for key,value in d.items():
+#     if value>max_count:
+#         max_char=key
+#         max_count=value
+# for k, v in d.items():
+#     print(f"{k}{v}",end='')
+# print()
+# print(f"Most Repeating Character is {max_char} and its frequency is {max_count}")
 
-for k, v in d.items():
-    print(f"{k}{v}",end='')
+"""
+Move the Zeros to the end of the list
+l=[1,0,9,2,0,1]
+"""
+
+""" Method - 1 """
+# l=[1,0,9,2,0,1]
+# l1=[]
+# l2=[]
+# for i in l:
+#     if i==0:
+#         l1.append(i)
+#     else:
+#         l2.append(i)
+# print(l2+l1)
+
+""" Method - 2 """
+l=[1,0,9,2,0,1]
+print(sorted(l,reverse=True))
