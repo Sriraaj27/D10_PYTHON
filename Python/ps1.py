@@ -95,5 +95,17 @@ l=[1,0,9,2,0,1]
 # print(l2+l1)
 
 """ Method - 2 """
-l=[1,0,9,2,0,1]
-print(sorted(l,reverse=True))
+# l=[1,0,9,2,0,1]
+# print(sorted(l,reverse=True))ZC
+
+
+"""
+find number having same first digit and last digit of the list element
+l = [234,4564,787,123,765,9009,3453]
+output= [4564,787,9009,3453]
+hint: palidrame
+"""
+
+# list1=[234,4564,787,123,765,9009,3453]
+# for i in list1:
+#     if 
